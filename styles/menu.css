@@ -68,7 +68,7 @@
 }
 
 .menu-toggle {
-    transform: unset;
+    transform: none;
 }
 
 .overlay {
@@ -96,7 +96,7 @@
         position: static;
         height: auto;
         display: flex;
-        transform: unset;
+        transform: none;
         flex-grow: 1;
         background-color: inherit;
     }
