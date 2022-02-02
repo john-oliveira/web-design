@@ -1,0 +1,33 @@
+html {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 18px; /*min and max fallback*/
+	font-size: min(max(18px, 2vw), 22px); /*clamp fallback*/
+	font-size: clamp(18px, 2vw, 22px);
+	background-color: #E0E0DE;
+}
+
+main, footer {
+	margin-left: 23px;  /*min and max fallback*/
+	margin-left: min(max(23px, 5vw), 40px); /*clamp fallback*/
+	margin-left: clamp(23px, 5vw, 40px);
+	margin-right: 23px;  /*min and max fallback*/
+	margin-right: min(max(23px, 5vw), 40px); /*clamp fallback*/
+	margin-right: clamp(23px, 5vw, 40px);
+	text-align: justify;
+}
+
+h1 {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+p {
+	margin-top: 14px;
+	margin-bottom: 14px;
+}
+
+footer p {
+	font-weight: bold;
+}
