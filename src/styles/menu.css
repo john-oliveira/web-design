@@ -7,9 +7,11 @@
 }
 
 .hambuguer-menu {
-    width: 30px;
+    flex-basis: 30px;
+    flex-shrink: 0;
     height: 30px;
-    color: #E0E0DE;
+    background: url(../assets/hamburguer-menu.svg) no-repeat;
+    background-size: contain;
 }
 
 .logo {
