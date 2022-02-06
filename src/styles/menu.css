@@ -35,7 +35,7 @@
    height: 100vh;
    min-width: 70vw;
    transform: translate(-130%);
-   transition: transform 0.2s;
+   transition: transform 0.3s;
    z-index: 1;
 }
 
@@ -93,8 +93,12 @@
 }
 
 .scroll-toggle {
-  overflow: hidden;
-  position: fixed; /* Safari Mobile */
+    overflow: hidden;
+    position: fixed; /* Safari Mobile */
+}
+
+.resize-transition-stopper {
+    transition: none !important;
 }
 
 @media(min-width: 800px){

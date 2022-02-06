@@ -15,3 +15,13 @@ const closeMenu = document.querySelector('.close-menu');
 closeMenu?.addEventListener('click', panelToggle);
 
 overlay?.addEventListener('click', panelToggle);
+
+//Prevent transition on window resize
+let resizeTimer: NodeJS.Timeout;
+window.addEventListener("resize", () => {
+  menuPanel?.classList.add("resize-transition-stopper");
+  clearTimeout(resizeTimer);
+  resizeTimer = setTimeout(() => {
+    menuPanel?.classList.remove("resize-transition-stopper");
+  }, 100);
+});
